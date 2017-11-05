@@ -51,13 +51,11 @@ public class TestController {
         boolean czyTakieSame = false;
 
         for (int i = 0; i < tab1.length; i++) {
-            for (int k = 0; k < tab2.length; k++) {
-                if (i % 2 == 0 && k % 2 == 0) {
-                    if (tab1[i] == tab2[k]) {
-                        czyTakieSame = true;
-                    }else{
-                        czyTakieSame = false;
-                    }
+            if(i%2==0){
+                if(tab1[i]==tab2[i]){
+                    czyTakieSame = true;
+                }else{
+                    czyTakieSame = false;
                 }
             }
         }
